@@ -1,11 +1,13 @@
 # _quarto.yml
 project:
   type: website
+  output-dir: docs
   
 format:
   html:
     theme: slate       # global theme for all pages
     css: styles.css    # your custom navbar CSS
+    
 
 website:
 #  title: 
