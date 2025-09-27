@@ -1,0 +1,30 @@
+# _quarto.yml
+project:
+  type: website
+  
+format:
+  html:
+    theme: slate       # global theme for all pages
+    css: styles.css    # your custom navbar CSS
+
+website:
+#  title: 
+  search: false   # remove the search magnifying glass
+  navbar:
+    left:
+      - text: "About"
+        href: about.qmd
+      - text: "Projects"
+        menu:
+          - text: "Econometrics"
+            href: posts/econometrics
+#      - text: "Essays"
+#        href: posts/essays
+
+    right:
+      - icon: github
+        href: https://github.com/B-Flores
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/brandon-flores16/
+        aria-label: LinkedIn

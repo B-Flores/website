@@ -1,0 +1,66 @@
+/* --- Navbar Icons --- */
+.navbar-nav .bi {
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover: invert default (light -> dark) */
+.navbar-nav .bi:hover {
+  color: #000000;
+}
+
+/* --- Navbar Text Links --- */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+/* Hover: same negative effect */
+.navbar-nav .nav-link:hover {
+  color: #000000;
+}
+
+/* --- Optional: Dropdown items (if you add any later) --- */
+.dropdown-menu .dropdown-item {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #000000;
+  background-color: #e9ecef; /* subtle hover background */
+}
+
+
+/*############################################################################
+
+/* --- Navbar icons & text hover effect (negative) --- */
+.navbar-nav .nav-link,
+.navbar-nav .bi {
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .bi:hover {
+  color: #000000; /* negative hover effect */
+}
+
+/* --- Remove any visible vertical borders or separators --- */
+.navbar-nav .nav-item,
+.navbar-nav .nav-link {
+  border: none !important;
+}
+
+/* Remove pseudo-element separators if present */
+.navbar-nav .nav-link::after {
+  content: none !important;
+}
+
+/* Optional: keep some spacing between items */
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 0.5rem;
+}
+
+/* Optional: remove navbar outer border/shadow */
+.navbar {
+  border: none;
+  box-shadow: none;
+}
